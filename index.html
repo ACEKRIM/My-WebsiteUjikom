@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Muhammad Fathir Fatah</title>
+    <meta name="description" content="Portofolio Muhammad Fathir Fatah - Mahasiswa Telkom University yang fokus di web design, fotografi, dan elektronika.">
+    <link rel="icon" type="image/x-icon" href="assets/img/profile.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="marquee">👋 Burung pelikan terbang ke taman, 
+Hinggap sebentar dekat kolam ikan, 
+Selamat pagi abang kaka yang cantik dan tampan, 
+Semoga rejekinya makin dilancarkan 😇</p>
+    <div class="profile-container">
+        <aside class="profile-sidebar floating">
+            <div class="profile-image">
+                <img src="assets/img/profile.jpeg" alt="Profile Photo">
+            </div>
+            <h1>Muhammad Fathir Fatah</h1>
+            <p>Mahasiswa Telkom University</p>
+            
+            <div class="social-links">
+                <a href="https://github.com/ACEKRIM"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-fathir-fatah-0513bb303" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/thirah_277?t=ZBCXiBpOvSWnLH6kpChV2Q&s=09"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/mfft_27?igsh=eXljajVmZDg3Nmxw" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Bandung | Telkom University</p>
+                <p><i class="fas fa-envelope"></i> fathirfatah21@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +62895333419388</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="about-section">
+                <h2>About Me 🤖</h2>
+                <p>Hello! Saya Muhammad Fathir Fatah, mahasiswa D3 Teknologi Telekomunikasi di Telkom University. Saya suka ngulik hal-hal yang berhubungan dengan desain web, fotografi, dan elektronik, khususnya mikrokontroler kayak Arduino dan FPGA. Bikin website yang keren dan gampang dipakai, ngedit foto biar lebih estetik, sampai ngerakit alat elektronik — semua itu seru banget buat saya. Buat saya, teknologi itu bukan cuma soal fungsi, tapi juga soal gimana bikin sesuatu yang bermanfaat dan enak dilihat.</p>
+            </section>
+
+            <section class="skills-section">
+                <h2>Technical Skills and my Hobby 🔧📸</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Web Design</h3>
+                        <p>HTML, CSS, JavaScript, UI/UX, Figma</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Photography & Image Editing</h3>
+                        <p>Adobe Lightroom, Snapseed</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Microcontroller</h3>
+                        <p>Arduino, FPGA DE10-Lite, Verilog</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Be Mechatronic</h3>
+                        <p>Schematic Design, PCB Layout, Soldering</p>
+                    </div>
+                </div>
+            </section> <!-- Perbaikan: penutup section ditambahkan di sini -->
+
+            <section class="gallery-projects">
+                <h2>Gallery Projects</h2>
+                <div class="slideshow-container">
+                    <h3>Ini merupakan hasil dari projects saya yang bisa dilihat</h3>
+                    <div class="mySlides fade">
+                        <img src="assets/img/project-1.jpg" style="width:100%" alt="Project 1">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="assets/img/project-2.jpg" style="width:100%" alt="Project 2">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="assets/img/project-3.jpg" style="width:100%" alt="Project 3">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="assets/img/project-4.jpg" style="width:100%" alt="Project 4">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="assets/img/project-5.jpg" style="width:100%" alt="Project 5">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for(let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if(slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Ganti gambar tiap 3 detik
+        }
+    </script>
+</body>
+</html>
